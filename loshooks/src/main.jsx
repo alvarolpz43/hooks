@@ -6,11 +6,13 @@ import StateCompo from './StateCompo'
 import Footer from './Footer'
 import Decrement from './Decrement'
 import UseRef from './UseRef'
+import Color from './LosColores'
+
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* <StateCompo>
+    <StateCompo>
       <center>
     <Header />
     </center>
@@ -23,10 +25,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Decrement/>
     </center>
    
-    </StateCompo> */}
+    </StateCompo>
 
     <center>
     <UseRef/>
     </center>
-  </React.StrictMode>,
+    <Color/>
+  </React.StrictMode>
 )

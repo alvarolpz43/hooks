@@ -2,9 +2,9 @@
 import React , { useContext } from "react"
 import { counterContext } from "./context/counterContext"
 
-const Header = ({children})=>{
+const Header = ()=>{
   
-const {counter,increment}= useContext(counterContext)
+const {counter,increment,children}= useContext(counterContext)
     return (
         <>
         <div>{children}</div>

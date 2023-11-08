@@ -14,15 +14,18 @@ const UseRef = () => {
         
     },[counter])
 
+    const boton = useRef()
+    console.log(boton)
+
     const cambiarNombre =()=>{
-        nombre.current='Arturo';
+        nombre.current='Alvaro yo se';
     }
   return (
     <div><h1>{counter}</h1>
     <button onClick={()=> setCounter(counter+1)}>Contador</button>
     <br />
     <h2>Nombre: {nombre.current}</h2>
-    <button onClick={cambiarNombre}>Cambiar Nombre</button>
+    <button ref={boton} onClick={cambiarNombre}>Cambiar Nombre</button>
     </div>
   )
 }
